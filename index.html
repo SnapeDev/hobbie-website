@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Jack's Hobbies</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <!-- Navigation Bar -->
+    <header
+      class="font-sans bg-white text-white flex justify-between items-center px-8 py-4"
+    >
+      <!-- Left: Title -->
+      <h1 class="text-3xl font-bold text-red-500">hobbies page</h1>
+
+      <!-- Right: Circular Buttons -->
+      <nav class="flex space-x-4 mb-6">
+        <a
+          href="index.html"
+          class="w-20 h-10 flex items-center justify-center bg-red-500 text-white rounded-full hover:bg-gray-300"
+        >
+          home
+        </a>
+        <a
+          href="hobbies.html"
+          class="w-20 h-10 flex items-center justify-center bg-red-500 text-white rounded-full hover:bg-gray-300"
+        >
+          hobbies
+        </a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="bg-white flex-grow p-0 text-center">
+      <!-- Welcome Text -->
+      <h2 class="text-3xl font-sans mb-6 w-full text-red-500">my hobbies</h2>
+      <p class="text-lg mb-10 font-sans">
+        Explore the things I enjoy — from relaxing in saunas to capturing
+        moments with photography, and of course, my love for football.
+      </p>
+
+      <!-- Horizontal Line Below Title -->
+      <hr class="border-t-8 border-slate-50 mb-6" />
+      <!-- Images with Links -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-10">
+        <!-- Sauna -->
+        <a href="sauna.html" class="block">
+          <img
+            src="https://www.guncast.com/wp-content/uploads/2022/11/Why-use-a-sauna-in-winter_KLAFS_Guncast.jpg"
+            alt="Sauna"
+            class="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-80 object-cover"
+          />
+          <p class="mt-2 text-lg font-semibold text-gray-800">Sauna</p>
+        </a>
+
+        <!-- Photography -->
+        <a href="photography.html" class="block">
+          <img
+            src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3R1ZGlvfGVufDB8fDB8fHww"
+            alt="Photography"
+            class="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-80 object-cover"
+          />
+          <p class="mt-2 text-lg font-semibold text-gray-800">Photography</p>
+        </a>
+
+        <!-- Football -->
+        <a href="football.html" class="block">
+          <img
+            src="https://imgresizer.eurosport.com/unsafe/2560x1440/filters:format(jpeg)/origin-imgresizer.eurosport.com/2024/03/12/3928437-79801508-2560-1440.jpg"
+            alt="Football"
+            class="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-80 object-cover"
+          />
+          <p class="mt-2 text-lg font-semibold text-gray-800">Football</p>
+        </a>
+      </div>
+
+      <!-- Horizontal Line Below Images -->
+      <hr class="border-t-8 border-slate-400 w-full" />
+
+      <!-- Second Horizontal Line Below Images -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 text-black text-center py-4">
+      <p>&copy; 2024 Jack's Hobbies. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
