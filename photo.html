@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Jack's Hobbies</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex flex-col">
+    <!-- Navigation Bar -->
+    <header
+      class="font-sans bg-white text-white flex justify-between items-center px-8 py-4"
+    >
+      <!-- Left: Title -->
+      <h1 class="text-3xl font-bold text-red-500">hobbies page</h1>
+
+      <!-- Right: Circular Buttons -->
+      <nav class="flex space-x-4 mb-2">
+        <a
+          href="index.html"
+          class="w-20 h-10 flex items-center justify-center bg-red-500 text-white rounded-full hover:bg-gray-300"
+        >
+          home
+        </a>
+        <a
+          href="sauna.html"
+          class="w-20 h-10 flex items-center justify-center bg-red-500 text-white rounded-full hover:bg-gray-300"
+        >
+          sauna
+        </a>
+        <a
+          href="photo.html"
+          class="w-28 h-10 flex items-center justify-center bg-red-500 text-white rounded-full hover:bg-gray-300"
+        >
+          photography
+        </a>
+        <a
+          href="photo.html"
+          class="w-28 h-10 flex items-center justify-center bg-red-500 text-white rounded-full hover:bg-gray-300"
+          >football</a
+        >
+      </nav>
+    </header>
+    <hr class="border-t-8 border-slate-400 w-full" />
+    <!-- Main Content -->
+    <main class="bg-white flex-grow flex items-center justify-center mt-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 p-10">
+        <!-- Image -->
+        <div>
+          <a href="photo.html" class="block relative">
+            <img
+              src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3R1ZGlvfGVufDB8fDB8fHww"
+              alt="Photography"
+              class="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-[600px] w-full object-cover"
+            />
+          </a>
+        </div>
+        <!-- Text -->
+        <div class="flex flex-col justify-center items-center mt-14">
+          <h2 class="text-2xl font-bold text-red-500 mb-4">
+            My Passion for Photography
+          </h2>
+          <p class="text-gray-700 text-lg leading-relaxed mb-4">
+            Photography allows me to capture emotions and moments. I’m
+            particularly drawn to portrait and fashion photography because of
+            the challenge of capturing a person’s essence and transforming
+            concepts into stunning visuals.
+          </p>
+          <p class="text-gray-700 text-lg leading-relaxed mb-4">
+            The interplay of light, angles, and styling in fashion photography
+            sparks my creativity and inspires me to constantly improve my craft.
+          </p>
+
+          <!-- Navigation Arrows Container -->
+          <div class="flex space-x-4 mt-6">
+            <!-- Previous Arrow -->
+            <a
+              href="sauna.html"
+              class="flex items-center justify-center bg-red-500 text-white rounded-full w-10 h-10 hover:bg-gray-300 transition-all"
+              aria-label="Previous Hobby"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </a>
+
+            <!-- Next Arrow -->
+            <a
+              href="football.html"
+              class="flex items-center justify-center bg-red-500 text-white rounded-full w-10 h-10 hover:bg-gray-300 transition-all"
+              aria-label="Next Hobby"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-gray-50 fixed w-full bottom-0 text-black text-center py-4"
+    >
+      <p>&copy; 2024 Jack's Hobbies. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
