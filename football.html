@@ -107,10 +107,21 @@
     </main>
 
     <!-- Footer -->
+
     <footer
-      class="bg-gray-50 fixed w-full bottom-0 text-black text-center py-4"
+      class="flex justify-between fixed w-full bottom-0 items-center bg-gray-50 text-black py-4 px-8"
     >
-      <p>&copy; 2024 Jack's Hobbies. All rights reserved.</p>
+      <!-- Center: Copyright -->
+      <p class="absolute left-1/2 transform -translate-x-1/2">
+        &copy; 2024 Jack's Hobbies. All rights reserved.
+      </p>
+
+      <!-- Right: Contact Link -->
+      <a
+        href="contact.html"
+        class="w-20 h-8 text-sm ml-auto flex items-center justify-center bg-gray-50 text-black rounded-full hover:bg-gray-200"
+        >Contact</a
+      >
     </footer>
   </body>
 </html>
