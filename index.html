@@ -8,6 +8,13 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
   <body class="min-h-screen flex flex-col">
     <!-- Navigation Bar -->
@@ -20,7 +27,7 @@
       </a>
 
       <!-- Right: Circular Buttons -->
-      <nav class="flex space-x-4 mb-2">
+      <nav class="flex space-x-4 mb-2 hidden sm:flex">
         <a
           href="index.html"
           class="w-20 h-10 flex items-center justify-center bg-red-500 text-white rounded-full hover:bg-gray-300"
@@ -93,11 +100,8 @@
           <p class="mt-2 text-lg font-semibold text-gray-800">Football</p>
         </a>
       </div>
-
+      <hr class="border-t-8 border-slate-400 w-full" />
       <!-- Horizontal Line Below Images -->
-      <hr class="border-t-8 border-slate-400 w-full mb-20" />
-
-      <!-- Second Horizontal Line Below Images -->
     </main>
 
     <!-- Footer -->
